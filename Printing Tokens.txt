@@ -1,0 +1,26 @@
+//Sazal Mahmud
+//Department of CSE, DIU
+//sazalmahmud46@gmail.com
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+ int i;
+   char s[1000];
+
+   scanf("%[^\n]",s);
+   for(i=0; i<strlen(s);i++)
+   {
+       if(s[i]==' ')
+       {
+           printf("\n");
+       }
+       else 
+       printf("%c",s[i]);
+
+   }
+   return 0;
+
+}

@@ -1,0 +1,18 @@
+//Sazal Mahmud
+//Department of CSE, DIU
+//sazalmahmud46@gmail.com
+ #include<stdio.h>
+ int main()
+ {
+  int x,y,i,sum=0;
+  scanf("%d",&x);
+  for(i=0; i<x; i++)
+   {
+      scanf("%d",&y);
+      sum+=y;
+   }
+      printf("%d\n",sum);
+
+
+ }
+

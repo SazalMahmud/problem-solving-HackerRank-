@@ -1,0 +1,35 @@
+
+//Sazal Mahmud
+//Department of CSE, DIU
+//sazalmahmud46@gmail.com
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main()
+{
+    int arr,*pk,i,temp,k;
+    scanf("%d",&arr);
+    k=arr;
+
+  pk=(int*)malloc(arr*sizeof(int));
+  for(i=0; i<arr; i++){
+    scanf("%d",pk+i);
+  }
+  
+
+  for(i=0; i<arr/2; i++)
+  {
+   temp=*(pk+i);
+   *(pk+i)=*(pk+k-1);
+   *(pk+k-1)=temp;
+    k--;
+
+  }
+  for(i=0; i<arr; i++)
+  printf("%d ",*(pk+i));
+  return 0;
+
+
+}
+

@@ -1,0 +1,23 @@
+//Sazal Mahmud
+//Department of CSE, DIU
+//sazalmahmud46@gmail.com
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int function(int a,int b,int c,int d)
+{
+    return (((a>b?a:b)>c?(a>b?a:b):c)>d?((a>b?a:b)>c?(a>b?a:b):c):d);
+}
+
+int main()
+ {
+    int a, b, c, d,max;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+
+    max=function(a,b,c,d);
+    printf("%d\n",max);
+    
+    return 0;
+}
+

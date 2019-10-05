@@ -1,0 +1,46 @@
+
+//Sazal Mahmud
+//Department of CSE, DIU
+//sazalmahmud46@gmail.com
+#include<stdio.h>
+#include<math.h>
+#include<string.h>
+#include<stdlib.h>
+int main()
+{
+    int arr[100],countP=0,countN=0,countZ=0,a,i;
+    double avg,avg2,avg3;
+    scanf("%d",&a);
+    for(i=0; i<a;i++)
+    {
+       scanf("%d",&arr[i]);
+    }
+
+    for(i=0; i<a; i++)
+    {
+        if(arr[i]>0)
+        {
+            countP++;
+
+        }
+        else if(arr[i]<0)
+        {
+          countN++;
+        }
+        else if(arr[i]==0)
+        {
+          countZ++;
+        }
+
+    }
+    avg=(double)countP/a;
+    avg2=(double)countN/a;
+    avg3=(double)countZ/a;
+    printf("%.6f\n",avg);
+    printf("%.6f\n",avg2);
+    printf("%.6f",avg3);
+
+    return 0;
+}
+
+
