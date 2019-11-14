@@ -1,0 +1,32 @@
+//Sazal Mahmud
+//Department of CSE, DIU
+//sazalmahmud46@gmail.com
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main()
+{
+    int a,b,i,j,and,or,xor,k=0,l=0,m=0;
+    scanf("%d %d",&a,&b);
+  for(i=1; i<a; i++)
+  { 
+      for(j=i+1; j<=a; j++)
+      {
+          and=i&j;
+          or=i|j;
+          xor=i^j;
+    if(and<b && and>k)
+      k=and;
+     if(or<b && or>l)
+      l=or;
+      if(xor<b && xor>m)
+      m=xor;
+    
+      }
+  }
+printf("%d\n%d\n%d\n",k,l,m);
+
+  
+    return 0;
+}
